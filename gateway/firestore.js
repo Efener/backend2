@@ -1,7 +1,7 @@
 const admin = require('firebase-admin');
 
 // Service account dosyasını doğrudan kullan
-const serviceAccount = require('./serviceAccountKey.json');
+const serviceAccount = require('/etc/secrets/serviceAccountKey.json');
 
 if (!admin.apps.length) {
   admin.initializeApp({
